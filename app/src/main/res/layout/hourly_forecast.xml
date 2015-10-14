@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Time: "
+        android:id="@+id/label1"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Date"
+        android:id="@+id/date"
+        android:layout_toRightOf="@+id/label1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Temp: "
+        android:id="@+id/label2"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/icon"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Temp"
+        android:id="@+id/temp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/label2"
+        android:layout_toStartOf="@+id/cond" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Condition: "
+        android:id="@+id/label3"
+        android:layout_toRightOf="@+id/date"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Condition"
+        android:id="@+id/cond"
+        android:layout_toRightOf="@+id/label3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Humidity: "
+        android:id="@+id/label4"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/date"
+        android:layout_toEndOf="@+id/date"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Humidity"
+        android:id="@+id/humidity"
+        android:layout_alignTop="@+id/temp"
+        android:layout_toEndOf="@+id/label4" />
+
+</RelativeLayout>
